@@ -45,7 +45,7 @@ export default class Home extends React.Component {
 
                 <button className="btn btn-primary" onClick={this.handleClick.bind(this)}>Click</button>
 
-                <p>Random = {this.state.random}</p>
+                {/* <p>Random = {this.state.random}</p> */}
                 <p>{options[this.state.random]}</p>
 
                 {/* <Link to={`/QuestionPage/${placeHolderValue}`}><div className="start-button">Start Quiz</div></Link> */}
