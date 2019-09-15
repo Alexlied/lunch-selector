@@ -6,7 +6,7 @@ export default class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            random: 0
+            random: -1
         }
         this.handleClick = this.handleClick.bind(this);
     }
@@ -37,10 +37,10 @@ export default class Home extends React.Component {
         let options = Object.values(map);
 
         return (
-            <div className="home">
-                <div className="home-title">
+            <div className="App">
+                <h1 className='display-4'>
                     Lunch Selector
-                </div>
+                </h1>
                 <p>Click the button to get a random restaurant.</p>
 
                 <button className="btn btn-primary" onClick={this.handleClick.bind(this)}>Click</button>
