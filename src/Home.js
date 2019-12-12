@@ -35,32 +35,17 @@ export default class Home extends React.Component {
             {id: 8, title: 'MOD Pizza', content: 'https://goo.gl/maps/15SpGvLjDAfxSsXBA'}
           ];
 
-        // const map = {
-        //     "0": "Chipotle",
-        //     "1": "India Gate",
-        //     "2": "Than Brothers",
-        //     "3": "Thai",
-        //     "4": "Ooba Tooba",
-        //     "5": "Maley Hut",
-        //     "6": "Joy Box",
-        //     "7": "Greek Express"
-        // }
-
-        // let options = Object.values(map);
-
         return (
             <div className="App">
                 <h1 className='display-4'>
                     Lunch Selector
                 </h1>
                 <p>Click the button to get a random restaurant.</p>
+                <p>The complete list of restaurants can be found <Link to={"/restaurants"}>here</Link>.</p>
 
                 <button className="btn btn-primary" onClick={this.handleClick.bind(this)}>Click</button>
-
-                {/* <p>Random = {this.state.random}</p> */}
-                {/* <p>{options[this.state.random]}</p> */}
                 <p><a target="_blank" rel="noopener noreferrer" href={restaurants[this.state.random].content}>{restaurants[this.state.random].title}</a></p>
-                {/* <Link to={`/QuestionPage/${placeHolderValue}`}><div className="start-button">Start Quiz</div></Link> */}
+
             </div>
         );
     }
